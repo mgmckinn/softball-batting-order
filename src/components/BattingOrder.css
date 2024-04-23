@@ -1,0 +1,56 @@
+.batting-order-container {
+  background-color: purple;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.batting-order-list {
+  margin-top: 2rem;
+  animation: fadeIn 1s;
+}
+
+.white-text {
+  color: white;
+}
+
+.purple-text {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.print-button {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media print {
+  .print-button {
+    display: block;
+  }
+  
+  .batting-order-container {
+    background-color: white;
+    color: purple;
+  }
+  
+  .batting-order-list {
+    margin-top: 0;
+  }
+  
+  .white-text {
+    color: purple;
+  }
+  
+  .purple-text {
+    color: white;
+  }
+}
